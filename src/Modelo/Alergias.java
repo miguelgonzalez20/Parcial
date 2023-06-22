@@ -1,14 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Modelo;
 
-/**
- *
- * @author Miguel
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Alergias {
+    //Atributo
+    private List<String> Lista_Alergias;
     
+    //Constructor
+    public Alergias() {
+        Lista_Alergias = new ArrayList<>();
+        Lista_Alergias.add("Latex");
+        Lista_Alergias.add("Polen");
+        Lista_Alergias.add("Acetaminofen");
+        Lista_Alergias.add("Polvo");
+        Lista_Alergias.add("Cebolla");
+    }
+    
+    public List<String> obtenerListaAlergias() {
+        return Lista_Alergias;
+    }
 }
