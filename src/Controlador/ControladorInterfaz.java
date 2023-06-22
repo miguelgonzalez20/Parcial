@@ -60,7 +60,13 @@ public class ControladorInterfaz {
                     
                 }
                 else{
-                    
+                    List<String> lista = new ArrayList<>();
+                    lista = coleccionPacientes.get(cc);
+                    Vista.setTxtApellidos(lista.get(0));
+                    Vista.setTxtNombres(lista.get(1));
+                    Vista.setTxtTelefono(lista.get(2));
+                    Vista.setTxtDireccion(lista.get(3));
+                    System.out.println("EL USUARIO SI EXISTE");
                 }
                     
                 System.out.println("buscar");
@@ -72,6 +78,7 @@ public class ControladorInterfaz {
                 
                 Vista.setTextAreaAlergias(elementoSeleccionado);
                 listaAlergias.add(elementoSeleccionado);
+                
                 System.out.println("Agregar");
             } 
             if(e.getActionCommand().equalsIgnoreCase("Agregar Usuario")){
@@ -88,7 +95,9 @@ public class ControladorInterfaz {
                 lista.addAll(listaAlergias);
                 Pacientes.AgregarMap(cc, lista);
                 System.out.println(coleccionPacientes);
-                       
+                Vista.setBlank(); 
+                comboBoxAlergias.removeAllItems();
+                
                 System.out.println("Agregar Usuario");
             } 
             if(e.getActionCommand().equalsIgnoreCase("Actualizar")){

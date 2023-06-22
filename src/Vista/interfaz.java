@@ -161,7 +161,7 @@ public class interfaz extends javax.swing.JFrame {
                                         .addGap(16, 16, 16))
                                     .addComponent(btnActualizarUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(91, 91, 91))))
+                        .addGap(82, 82, 82))))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(44, 44, 44)
@@ -291,6 +291,34 @@ public class interfaz extends javax.swing.JFrame {
         String text = txtTelefono.getText();
         return text;
     }
+
+    public void setTxtApellidos(String text) {
+        txtApellidos.setText(text);
+    }
+
+    public void setTxtDireccion(String text) {
+        txtDireccion.setText(text);
+    }
+
+    public void setTxtNombres(String text) {
+        txtNombres.setText(text);
+    }
+
+    public void setTxtTelefono(String text) {
+        txtTelefono.setText(text);
+    }
+    
+    
+    
+    public void setBlank(){
+        txtTelefono.setText("");
+        txtNombres.setText("");
+        txtDireccion.setText("");
+        txtApellidos.setText("");
+        txtCedula.setText("");
+        textAreaAlergias.setText("");
+    } 
+    
     
     
     

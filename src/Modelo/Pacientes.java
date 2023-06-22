@@ -3,7 +3,6 @@ package Modelo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Pacientes {
@@ -21,6 +20,12 @@ public class Pacientes {
     
     public static void AgregarMap(String clave, ArrayList<String> valor){
         coleccionPacientes.put(clave,valor);
+    }
+    
+    public ArrayList<String> getValor(){
+        ArrayList<String> lista = new ArrayList<>();
+        return lista;
+    
     }
 
    
