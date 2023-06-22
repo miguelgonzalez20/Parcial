@@ -6,6 +6,10 @@
 package Vista;
 
 import java.awt.event.ActionListener;
+import java.util.List;
+import javax.swing.JComboBox;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
  *
@@ -70,7 +74,6 @@ public class interfaz extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 51, 255));
         jLabel6.setText("Controles");
 
-        comboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBoxActionPerformed(evt);
@@ -253,6 +256,45 @@ public class interfaz extends javax.swing.JFrame {
     public void addbtnActualizarUsuarioListener(ActionListener listenControles){
         btnActualizarUsuario.addActionListener(listenControles);
     }
+
+    public JComboBox<String> getComboBox() {
+        return comboBox;
+    }
+
+    public String getTxtCedula() {
+        String text = txtCedula.getText();
+        return text;
+    }
+
+    public void setTextAreaAlergias(String alergia) {
+        String palabra = textAreaAlergias.getText();
+        
+        textAreaAlergias.setText(palabra + "\n" + alergia);
+    }
+
+    public String getTxtApellidos() {
+        String text = txtApellidos.getText();
+        return text;
+    }
+
+    public String getTxtDireccion() {
+        String text = txtDireccion.getText();
+        return text;
+    }
+
+    public String getTxtNombres() {
+        String text = txtNombres.getText();
+        return text;
+    }
+
+    public String getTxtTelefono() {
+        String text = txtTelefono.getText();
+        return text;
+    }
+    
+    
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActualizarUsuario;
